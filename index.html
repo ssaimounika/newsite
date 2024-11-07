@@ -5,7 +5,7 @@
     </head>
     <body>
         <h1>My External Page</h1>
-        <div id="lightning-out"></div>
+        <div id="lightningout"></div>
         <script src="https://texvellc--texvedemo.sandbox.my.salesforce.com/lightning/lightning.out.js"></script>
         <script>
             $Lightning.use(
@@ -14,13 +14,13 @@
                     $Lightning.createComponent(
                         'c:websiteChat', // top-level component of the Lightning Out app
                         {}, // attributes to set on the component
-                        'lightning-out', // DOM element ID where the component is inserted
+                        'lightningout', // DOM element ID where the component is inserted
                         function (cmp) { // callback after the component loads
                             console.log('The component was created.');
                         }
                     );
                 },
-                'https://texvellc--texvedemo.sandbox.my.site.com/chatBot' // Experience Cloud site endpoint
+                'https://texvellc--texvedemo.sandbox.my.site.com' // Experience Cloud site endpoint
             );
         </script>
     </body>
